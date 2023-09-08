@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jop</title>
+    <style>
+        .container-banner{
+            padding-bottom: 3%;
+        }
+        .container-info{
+            display: block;
+            margin-bottom: 2rem;
+            margin-top: 0;
+        }
+        .container-info .jobs{
+            margin-top: 0;
+        }
+        .log_sign{
+                width: 15%;
+        }
+        .post-job{
+            width: 100%;
+            padding: 2%;
+            padding-left: 5%;
+            background-color: #fff;
+        }
+        .post-job input{
+            width: 95%;
+            height: 1.6rem;
+            border: 1px solid #777;
+            border-radius: 3px;
+            padding-left: 1%;
+            outline: none;
+        }
+        .date{
+            width: 50%;
+            float: left;
+        }
+        input#Date{
+            width: 98%;
+        }
+        input#location{
+            width: 45%;
+        }
+        input#Salary{
+            width: 50%;
+        }
+        input#Choose-logo{
+            padding-left: 0;
+        }
+        .post-job button{
+            width: 8%;
+            margin-top: 2%;
+            border: none;
+            border-radius: 5px;
+            height: 2rem;
+            background-color: rgb(0, 0, 253);
+            cursor: pointer;
+        }
+        @media(max-width:900px){
+            .log_sign{
+                width: 20%;
+            }
+            .post-job button{
+            width: 10%;
+        }
+        }
+        @media(max-width:776px){
+            .log_sign{
+                width: 25%;
+            }
+            .post-job button{
+            width: 12%;
+        }
+        }
+        @media(max-width:576px){
+            .log_sign{
+                width: 45%;
+            }
+            input#Salary{
+            width: 95%;
+        }
+        .post-job button{
+            width: 20%;
+        }
+        .date{
+            width: 97%;
+            float: none;
+        }
+        input#location{
+            width: 95%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-banner">
+        <div class="container-header">
+            <div class="logo"><a href=""><img src="img/logo.png" alt="logo"></a></div>
+            <div class="log_sign"><ul>
+                <li class="sign"><a href="index.html">Home</a></li>
+            </ul></div>
+        </div>
+        <div class="container-info">
+            <div class="jobs">
+                <p class="myjob">Post Job</p>
+            </div>
+        </div>
+    </div>
+    <div class="post-job">
+        <p>Job title</p>
+        <input type="text" name="job-title" id="title" placeholder="Job title">
+        <p>Company name</p>
+        <input type="text" name="Company-name" id="name" placeholder="Company name">
+        <p>Company Email</p>
+        <input type="text" name="Company-Email" id="Email" placeholder="Company Email">
+        <div class="date">
+            <p>Create Date</p>
+            <input type="text" name="Date" id="Date" placeholder="Create Date">
+        </div>
+        <div class="location">
+            <p>Location</p>
+            <input type="text" name="location" id="location" placeholder="Location">
+        </div>
+        <p>description</p>
+        <input type="text" name="description" id="description" placeholder="description">
+        <p>Choose logo</p>
+        <input type="file" name="Choose-logo" id="Choose-logo" placeholder="Choose logo">
+        <p>Salary</p>
+        <input type="text" name="Salary" id="Salary" placeholder="Salary">
+        <br>
+        <button>Post Job</button>
+    </div>
+</body>
+</html>

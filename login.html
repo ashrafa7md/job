@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container-banner{
+                background-image: none;
+            }
+        .login{
+            width: 50%;
+            padding-top: 5%;
+            padding-left: 3%;
+            padding-bottom: 5%;
+            background-color: #777;
+            margin-top: 5%;
+            margin-left: 25%;
+            background-image: url(img/banner\ 1.png);
+            border-radius: 8px;
+        }
+        .log_sign{
+                width: 15%;
+            }
+        @media(max-width:900px){
+            .log_sign{
+                width: 20%;
+            }
+        }
+        @media(max-width:776px){
+            .login{
+                width: 80%;
+                margin-left: 10%;
+            }
+            .log_sign{
+                width: 25%;
+            }
+        }
+        .login p.cap{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        @media(max-width:576px){
+            .login{
+                width: 100%;
+                margin-left: 0;
+            }
+            .log_sign{
+                width: 45%;
+            }
+        }
+        .login form{
+            width: 100%;
+            margin-top: 5%;
+            display: flex;
+            flex-direction: column;
+        }
+        .login form p{
+            width: 100%;
+            font-weight: bold;
+            font-size: x-large;
+        }
+        .login form input{
+            width: 90%;
+            margin-left: 5%;
+            font-size: 1.5rem;
+            height: 3rem;
+            border: none;
+            border-bottom: 2px solid #777;
+            padding-left: 2%;
+        }
+        .login form button{
+            width: 50%;
+            height: 2.5rem;
+            font-size: large;
+            font-weight: bold;
+            background-color: rgb(0, 255, 0);
+            border: none;
+            border-radius: 5px;
+            margin-left: 25%;
+            margin-top: 2%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-banner">
+        <div class="container-header">
+            <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+            <div class="log_sign"><ul>
+                <li class="sign"><a href="sign.html">Sign Up</a></li>
+            </ul></div>
+        </div>
+        <div class="login">
+        <p class="cap">Login</p>
+        <form action="">
+            <p class="user"><input type="text" name="user" id="username" placeholder="Username"></p>
+            <p class="pass"><input type="password" name="" id="password" placeholder="Password"></p>
+            <button>Login</button>
+        </form>
+    </div>
+    </div>
+    
+</body>
+</html>

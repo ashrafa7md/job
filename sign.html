@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Job</title>
+    <style>
+        .container-banner{
+                background-image: none;
+            }
+            .log_sign{
+                width: 5%;
+            }
+        @media(max-width:900px){
+            .log_sign{
+                width: 10%;
+            }
+        }
+        @media(max-width:776px){
+            .log_sign{
+                width: 15%;
+            }
+        }
+        @media(max-width:576px){
+            .log_sign{
+                width: 20%;
+            }
+            .sign{
+                width: 90%;
+            }
+        }
+        .sign{
+            width: 50%;
+            margin-left: 25%;
+            padding: 3%;
+            margin-top: 5%;
+            background-image: url(img/banner\ 1.png);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .sign form{
+            width: 100%;
+        }
+        .sign p.cap{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .sign p input{
+            width: 90%;
+            margin-left: 5%;
+            font-size: 1.5rem;
+            height: 3rem;
+            border: none;
+            border-bottom: 2px solid #777;
+            padding-left: 2%;
+        }
+        .sign form button{
+            width: 50%;
+            height: 2.5rem;
+            font-size: large;
+            font-weight: bold;
+            background-color: rgb(0, 255, 0);
+            border: none;
+            border-radius: 5px;
+            margin-left: 25%;
+            margin-top: 2%;
+            cursor: pointer;
+        }
+        @media(max-width:900px){
+            .log_sign{
+                width: 10%;
+            }
+            .sign{
+                width: 70%;
+                margin-left: 15%;
+            }
+        }
+        @media(max-width:776px){
+            .log_sign{
+                width: 15%;
+            }
+        }
+        @media(max-width:576px){
+            .log_sign{
+                width: 20%;
+            }
+            .sign{
+                width: 90%;
+                margin-left: 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-banner">
+        <div class="container-header">
+            <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+            <div class="log_sign"><ul>
+                <li class="log"><a href="login.html">Login</a></li>
+            </ul></div>
+        </div>
+        <div class="sign">
+            <p class="cap">Sign Up</p>
+            <form action="">
+                <p class="first"><input type="text" class="firstname" placeholder="First Name"></p>
+                <p class="last"><input type="text" class="laststname" placeholder="Last Name"></p>
+                <p class="user"><input type="text" class="username" placeholder="Username"></p>
+                <p class="pass"><input type="password" class="password" placeholder="Password"></p>
+                <button>Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

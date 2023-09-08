@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.container-banner{
+    background-image: url(img/banner\ 1.png);
+    padding: 0;
+    margin: 0;
+}
+.container-header{
+    display: flex;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 5rem;
+    justify-content: space-between;
+    background-image: url(img/banner\ 1.png);
+}
+.logo{
+    width: 30%;
+}
+.container-header .logo img{
+    width: 55%;
+    height: 55%;
+}
+.log_sign{
+    width: 20%;
+}
+.log_sign ul{
+    display: flex;
+    list-style: none;
+}
+.log_sign ul li.log{
+    position: relative;
+    top:-2px;
+    margin-right: 8%;
+}
+.log_sign ul li.sign{
+    display: flex;
+    justify-content: center;
+    width: 5rem;
+    align-items: center;
+    background-color: rgb(0, 255, 0);
+    height: 2.5rem;
+    position: relative;
+    top:-15px;
+    border-radius: 5px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+@media(max-width:900px){
+    .container-header{
+        padding-right: 2rem;
+    }
+    .log_sign{
+    width: 30%;
+}
+    .log_sign ul{
+        font-size: small;
+        margin-left: 15%;
+    }
+}
+@media(max-width:600px){
+    .container-header{
+        padding-right: 2rem;
+    }
+    .log_sign{
+    width: 60%;
+}
+    .log_sign ul{
+        font-size: x-small;
+        margin-left: 30%;
+    }
+}
+.container-info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.img img{
+    width: 80%;
+}
+.jobs{
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 30%;
+}
+.jobs .myjob{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 7%;
+}
+.jobs p{
+    line-height: 1.5;
+}
+.button{
+    margin-left: 3%;
+    width: 90%;
+}
+.button button{
+    width: 40%;
+    margin-right: 3%;
+    height: 3rem;
+    background-color:rgb(0, 255, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button button.job{
+    width: 30%;
+}
+@media(max-width:1024px){
+    .img{
+        display: none;
+    }
+    .jobs{
+        width: 60%;
+        margin-bottom: 10%;
+    }
+}
+@media(max-width:600px){
+    .button button{
+    width: 50%;
+}
+.button button.job{
+    width: 40%;
+}
+}
+.container-job-listing{
+    width: 100%;
+    background-color: #fff;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+.container-job-listing .front{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    background-color: rgb(42, 45, 47);
+    margin-left: 3%;
+    margin-top: 2%;
+    padding: 2%;
+    margin-bottom: 1%;
+}
+.container-job-listing .flutter{
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    background-color: rgb(42, 45, 47);
+    padding: 2%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+}
+.front .f-logo,
+.flutter .f-logo{
+    display: flex;
+    width: 50%;
+}
+.flutter .f-logo img,
+.front .f-logo img{
+    height: 5rem;
+    margin-right: 2%;
+}
+.flutter .f-logo img{
+    width: 8rem;
+}
+.f-data{
+    width: 18%;
+}
+.f-info p{
+    color: gray;
+}
+.f-data .show-button{
+    width: 100%;
+}
+.f-data .show-button button{
+    height: 2.5rem;
+    width: 70%;
+    position: relative;
+    top: -5px;
+    left: 10px;
+    border: none;
+    background-color: rgb(0, 255, 0);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.f-data p{
+    color: gray;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20%;
+}
+@media(max-width:880px){
+    .front .f-logo,.flutter .f-logo{
+        width: 60%;
+    }
+    .front .f-data,.flutter .f-data{
+        width: 25%;
+    }
+}
+@media(max-width:630px){
+    .front,.flutter{
+        display: flex;
+        flex-direction: column;
+}
+.front .f-logo , .front .f-data,
+.flutter .f-logo , .flutter .f-data{
+    width: 100%;
+}
+.front .f-data,.flutter .f-data{
+    padding-right: 0;
+    padding-left: 55%;
+}
+}
+
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Job</title>
+    <style>
+        .jobName{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .jobName .name{
+            display: flex;
+            width: 22%;
+            padding: 1%;
+            background-color: #fff;
+            color: black;
+            justify-content: center;
+            font-size: large;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .jobData{
+            width: 90%;
+            display: flex;
+        }
+        .jobInfo{
+            width: 60%;
+            margin-left: 10%;
+            margin-top: 5%;
+            padding-bottom: 5%;
+        }
+        .jobInfo .description{
+            width: 95%;
+            padding: 2%;
+            background-color: #fff;
+            color: black;
+            border-radius: 5px;
+        }
+        .jobInfo p{
+            margin-left: 2%;
+            line-height: 1.5;
+        }
+        .jobInfo .app{
+            width: 95%;
+            padding: 2%;
+            background-color: #fff;
+            color: black;
+            border-radius: 5px;
+            margin-top: 2%;
+        }
+        .jobSummary {
+            width: 39%;
+            margin-top: 5%;
+            margin-left: 2%;
+        }
+        .jobSummary .summary{
+            width: 90%;
+            padding: 1%;
+            padding-left: 2%;
+            background-color: #fff;
+            color: black;
+            border-radius: 5px;
+        }
+        .jobSummary .summaryData{
+            width: 90%;
+            padding: 2%;
+            background-color: #fff;
+            color: black;
+            border-radius: 5px;
+            margin-top: 2%;
+        }
+        .apply{
+            width: 95%;
+            display: flex;
+            justify-content: right;
+        }
+        .apply button{
+            height: 2rem;
+            border: none;
+            border-radius: 5px;
+            width: 5rem;
+            margin-bottom: 3%;
+            cursor: pointer;
+            background-color: rgb(0, 255, 0);
+        }
+        @media(max-width:900px){
+            .jobName .name{
+                width: 50%;
+            }
+            .jobData{
+            flex-direction: column;
+        }
+        .jobInfo{
+            width: 95%;
+            padding-bottom: 1%;
+        }
+        .jobSummary {
+            width: 100%;
+            margin-left: 10%;
+            margin-bottom: 2%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-banner">
+        <div class="container-header">
+            <div class="logo"><a href=""><img src="img/logo.png" alt="logo"></a></div>
+            <div class="log_sign"><ul>
+                <li class="sign"><a href="post.html">Post A Job</a></li>
+            </ul></div>
+        </div>
+        <div class="jobName">
+            <div class="name">Job Name : Frontend</div>
+        </div>
+        <div class="jobData">
+            <div class="jobInfo">
+            <div class="description">
+                <h3>Job Description</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In rem quia adipisci ipsam tenetur rerum culpa quasi, eum iusto minima atque, sit assumenda cum expedita? Ipsam impedit commodi modi fugiat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates perferendis reprehenderit quis eos enim labore debitis incidunt tempore, mollitia.</p>
+                <h3>Responsibilty</h3>
+                <p>Know html ,css and javascript</p>
+            </div>
+            <div class="app">
+                <h2>Apply for Job</h2>
+                <p>Send your CV to our email at : Elesawy2001@hotmail.com</p>
+            </div>
+        </div>
+        <div class="jobSummary">
+            <div class="summary">
+                <h1>Job summary</h1>
+            </div>
+            <div class="summaryData">
+                <p>
+                    <ul>
+                        <li>Published on: 2023-09-07T16:00:00.582602</li>
+                        <li>salary: 15000</li>
+                        <li>loction: sohag</li>
+                        <li>job nature: Full time</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        </div>
+        <div class="apply">
+            <button>Apply Now</button>
+        </div>
+    </div>
+</body>
+</html>
